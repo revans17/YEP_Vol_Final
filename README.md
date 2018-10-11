@@ -11,3 +11,16 @@ $ bundle install --without production
 $ rails db:migrate
 $ rails s
 ```
+
+
+# Git Commands
+
+To push to GIT:
+
+```
+$ git pull origin <branch_name>
+$ git init
+$ git add .
+$ git commit -m "<what_you_did"
+$ git push origin <branch_name>
+```
