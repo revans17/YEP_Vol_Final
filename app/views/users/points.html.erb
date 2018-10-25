@@ -20,12 +20,14 @@
   </aside>
   <div class="col-md-8">
     <h3><%= @title %></h3>
-    <!-- <% if @users.any? %>
+    <!-- <h3><%= @user.points %></h3> -->
+    <% if @user.points > "0" %>
       <ul class="users follow">
-        <%= render @users %>
+           You have
+        <%= @user.points %>
+         points
       </ul>
-      <%= will_paginate %>
-    <% end %> -->
-    hi
+    <% end %>
+
   </div>
 </div>
