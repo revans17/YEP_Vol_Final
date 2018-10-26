@@ -18,12 +18,12 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Volunteer Discussion</h1>
+    <!-- <h1>Volunteer Discussion</h1> -->
 
-    <h2>
+    <!-- <h2>
 
-    </h2>
-
+    </h2> -->
+    <%= link_to "Sign In!", login_path, class: "btn btn-lg btn-primary" %>
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
 <% end %>

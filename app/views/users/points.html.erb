@@ -20,18 +20,18 @@
   </aside>
   <div class="col-md-8">
     <h3><%= @title %></h3>
-    <!-- <h3><%= @user.points %></h3> -->
     <% if @user.points > "0" %>
       <ul class="users follow">
-           You have
+           <%=@user.name%> has
         <%= @user.points %>
          points
       </ul>
      <% end %>
+     <br>
       <% if current_user.admin%>
           <%= form_for(@user) do |f| %>
          <%= render 'shared/error_messages', object: f.object %>
-        Edit
+        <b>Edit</b>
         <%= f.label :points %>
         <%= f.text_field :points, class: 'form-control' %>
 
