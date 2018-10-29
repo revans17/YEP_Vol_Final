@@ -34,9 +34,11 @@
         <b>Edit</b>
         <%= g.label :points %>
         <%= g.text_field :points, class: 'form-control' %>
-        <%= hidden_field(:user, :to_key)%>
         <%= g.submit "Save changes", class: "btn btn-primary" %>
-      <% end %>
-    <% end %>
+     <% end %>
+     <!-- <% if current_user.points != :points%>
+
+     <% end %> -->
+  <% end %>
   </div>
 </div>
