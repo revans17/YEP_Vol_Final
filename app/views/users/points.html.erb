@@ -31,14 +31,10 @@
       <% if current_user.admin%>
         <%= form_for(@user) do |g| %>
         <%= render 'shared/error_messages', object: g.object %>
-        <b>Edit</b>
-        <%= g.label :points %>
+        <b>Edit Points</b>
         <%= g.text_field :points, class: 'form-control' %>
-        <%= g.submit "Save changes", class: "btn btn-primary" %>
+        <%= g.submit "Save changes", class: "btn--form" %>
      <% end %>
-     <!-- <% if current_user.points != :points%>
-
-     <% end %> -->
   <% end %>
   </div>
 </div>
