@@ -29,14 +29,13 @@
      <% end %>
      <br>
       <% if current_user.admin%>
-          <%= form_for(@user) do |f| %>
-         <%= render 'shared/error_messages', object: f.object %>
+        <%= form_for(@user) do |g| %>
+        <%= render 'shared/error_messages', object: g.object %>
         <b>Edit</b>
-        <%= f.label :points %>
-        <%= f.text_field :points, class: 'form-control' %>
-
-        <%= f.submit "Save changes", class: "btn btn-primary" %>
-
+        <%= g.label :points %>
+        <%= g.text_field :points, class: 'form-control' %>
+        <%= hidden_field(:user, :to_key)%>
+        <%= g.submit "Save changes", class: "btn btn-primary" %>
       <% end %>
     <% end %>
   </div>
