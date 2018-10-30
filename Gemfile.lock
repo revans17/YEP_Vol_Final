@@ -284,6 +284,7 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.13.1)
+    mysql (2.9.1)
     nenv (0.3.0)
     netrc (0.11.0)
     nio4r (2.3.1)
@@ -410,6 +411,7 @@ DEPENDENCIES
   coffee-rails (= 4.2.2)
   faker (= 1.7.3)
   fog (= 1.42)
+  fog-aws
   guard (= 2.14.1)
   guard-minitest (= 2.4.6)
   jbuilder (= 2.7.0)
@@ -418,6 +420,7 @@ DEPENDENCIES
   mini_magick (= 4.7.0)
   minitest (= 5.10.3)
   minitest-reporters (= 1.1.14)
+  mysql (~> 2.9, >= 2.9.1)
   pg (= 0.20.0)
   puma (= 3.9.1)
   rails (= 5.1.6)
